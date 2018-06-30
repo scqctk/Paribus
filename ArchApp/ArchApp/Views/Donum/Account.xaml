@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchApp.Views.Donum.Account"
+             NavigationPage.HasNavigationBar="false"
+             >
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="DodgerBlue"
+            >
+            <Label 
+                Margin="0,40,0,75"
+                Text="Paribus Donum"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="75"
+                TextColor="White"
+                />
+            <Button
+                Text="Change Password" 
+                TextColor="White"
+                BackgroundColor="LightSlateGray"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                HeightRequest="65"
+                Margin="0,0,0,0" 
+                
+                x:Name="PsswdChange"
+                Clicked="PsswdChange_Clicked"
+                />
+            <Button
+                Text="Donate" 
+                TextColor="White"
+                BackgroundColor="LightSlateGray"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                HeightRequest="65"
+                Margin="0,0,0,0" 
+                
+                x:Name="Donate"
+                Clicked="Donate_Clicked"
+                
+                />
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

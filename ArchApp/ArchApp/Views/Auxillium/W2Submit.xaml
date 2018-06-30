@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchApp.Views.Auxillium.W2Submit"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="DodgerBlue">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label 
+                   x:Name="submitLabel"
+                   Text="Submit Your 2018 W2 Form Here as an Image in High Resolution."
+                   FontSize="Large"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="StartAndExpand"
+                   Margin="0,50,0,0"/>
+
+
+            <Button x:Name="submitForm" 
+                    Text="Submit W-2" 
+                    Clicked="submitForm_Clicked"
+                    TextColor="White"
+                    BackgroundColor="LightSlateGray"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="65"
+                    Margin="0,50,0,0"/>
+
+
+            <Label x:Name="inputEmail" 
+                   Text="Enter an Email" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   IsVisible="False"/>
+
+            <Entry x:Name="email" 
+                   Placeholder="babyBobby@gmail.com"
+                   Text=""
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   PlaceholderColor="LightGray"
+                   IsVisible="False"/>
+
+            <Label x:Name="inputPassword" 
+                   Text="Type a Password:" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   IsVisible="False"/>
+            <Entry x:Name="password" 
+                   Placeholder="password"
+                   Text=""
+                   IsPassword="True"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   PlaceholderColor="LightGray"
+                   IsVisible="False"/>
+            <Label x:Name="reEnter" 
+                   Text="Re-enter password:" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   IsVisible="False"/>
+
+            <Entry x:Name="againPassword" 
+                   Text=""
+                   IsPassword ="True"
+                   Placeholder="password"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   PlaceholderColor="LightGray"
+                   IsVisible="False"/>
+
+            <Label x:Name="inputFirstName" 
+                   Text="Enter First Name:" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   IsVisible="False"/>
+            <Entry x:Name="firstName" 
+                   Text=""
+                   Placeholder="Cabo"
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   PlaceholderColor="LightGray"
+                   IsVisible="False"/>
+
+            <Label x:Name="inputLastName" 
+                   Text="Enter Last Name:" 
+                   TextColor="White"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   IsVisible="False"/>
+            <Entry x:Name="lastName" 
+                   Placeholder="Sanders"
+                   Text=""
+                   HorizontalTextAlignment="Center"
+                   WidthRequest="250"
+                   TextColor="Black"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   PlaceholderColor="LightGray"
+                   IsVisible="False"/>
+            <Button x:Name="createAccount" 
+                    Text="Create Account!" 
+                    Clicked="createAccount_Clicked"
+                    TextColor="White"
+                    BackgroundColor="LightSlateGray"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="65"
+                    Margin="0,50,0,0"
+                    IsVisible="False"/>
+
+
+
+
+
+
+            <Button x:Name="decisionButton"
+                    Text="Yes" 
+                    Clicked="decisionButton_Clicked"
+                    TextColor="White"
+                    BackgroundColor="LightSlateGray"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="65"
+                    Margin="0,50,0,0"
+                    IsVisible="False"/>
+
+            <Button x:Name="noButton" 
+                    Text="No" 
+                    Clicked="noButton_Clicked"
+                    TextColor="White"
+                    BackgroundColor="LightSlateGray"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="65"
+                    Margin="0,50,0,0"
+                    IsVisible="False"/>
+
+
+
+            <Label VerticalOptions="EndAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

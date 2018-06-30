@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchApp.Views.Auxillium.ReceiverSignIn">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text=" Auxillium Login"
+                   Margin="0,100,0,0"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <Entry x:Name="Email"
+                   Margin="0,40,0,0"
+                   Text=""
+                       BackgroundColor="White"
+                       Placeholder="babyBobby@gmail.com"
+                       PlaceholderColor="LightGray"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                    TextColor="Black"
+                       WidthRequest="250"
+                       
+                       />
+
+
+            <Entry x:Name="Password"
+                   Text=""
+                       BackgroundColor="White"
+                       Placeholder="Password"
+                       PlaceholderColor="LightGray"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       WidthRequest="250"
+                       IsPassword="True"
+                       />
+
+
+
+            <Button x:Name="ReceiverLogin" 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    Clicked="ReceiverLogin_Clicked"
+                    BackgroundColor="LightSlateGray"
+                    TextColor="White"
+                    WidthRequest="200"
+                    HeightRequest="65"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

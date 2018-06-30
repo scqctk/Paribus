@@ -2,13 +2,55 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ArchApp"
-             x:Class="ArchApp.MainPage">
+             x:Class="ArchApp.MainPage"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="DodgerBlue">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                    Source="https://i.imgur.com/xIkAqP7.png" 
+                    VerticalOptions="Start"
+                    Margin="0, 50, 0, 0"/>
+
+            <Button
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="65"
+                    BackgroundColor="LightSlateGray"
+                    TextColor="White"
+                    Text="Donum"
+                    x:Name="Donum"
+                    Clicked="Donum_Clicked"
+                    VerticalOptions="EndAndExpand"/>
+
+            <Label
+                     XAlign="Center"
+                     Text="Donate to your community"
+                     FontSize="Micro"
+                     TextColor="White"
+                     VerticalOptions="End"/>
+
+            <Button
+                    HorizontalOptions="Center"
+                    WidthRequest="200"
+                    HeightRequest="65"
+                    BackgroundColor="LightSlateGray"
+                    TextColor="White"
+                    Text="Auxillium"
+                    x:Name="Auxillium"
+                    Clicked="Auxillium_Clicked"
+                    VerticalOptions="End"/>
+
+            <Label
+                    Margin="0,0,0,50"
+                    XAlign="Center"
+                    Text="Receive assistance with necessities"
+                    FontSize="Micro"
+                    TextColor="White"
+                    VerticalOptions="End"/>
+
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

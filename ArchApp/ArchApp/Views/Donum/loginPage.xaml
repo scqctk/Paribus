@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArchApp.Views.Donum.loginPage"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="DodgerBlue">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Login"
+                   Margin="0,100,0,0"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+
+            <Entry x:Name="Login"
+                   Margin="0,40,0,0"
+                       BackgroundColor="White"
+                       Placeholder="Username"
+                       PlaceholderColor="LightGray"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                      TextColor="Black"
+                       WidthRequest="250"
+                       
+                       />
+
+
+            <Entry x:Name="Password"
+                       BackgroundColor="White"
+                       Placeholder="Password"
+                       PlaceholderColor="LightGray"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="Black"
+                       WidthRequest="250"
+                       IsPassword="True"
+                       />
+
+
+
+            <Button x:Name="LoginButton" 
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Text="Login"
+                    Clicked="LoginButton_Clicked"
+                    BackgroundColor="LightSlateGray"
+                    TextColor="White"
+                    WidthRequest="200"
+                    HeightRequest="65"/>
+
+            <Button
+                x:Name="NewUser"
+                Clicked="NewUser_Clicked"
+                BackgroundColor="LightSlateGray"
+                TextColor="White"
+                WidthRequest="200"
+                HeightRequest="65"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Text="Sign Up"                
+                />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

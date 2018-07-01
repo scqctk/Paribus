@@ -7,9 +7,9 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Image Source="http://staffassembly.uci.edu/files/2015/10/helping-hands.jpg"
+            <Image Source="http://i.huffpost.com/gen/2411572/images/o-HOMELESS-CHRISTMAS-facebook.jpg"
                    Margin="0,50,0,0"
-                   VerticalOptions="StartAndExpand"
+                   VerticalOptions="CenterAndExpand"
                    HorizontalOptions="Center"/>
 
             <Button Text="Donate Now"

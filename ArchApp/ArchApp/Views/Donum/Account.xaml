@@ -10,7 +10,7 @@
             >
             <Label 
                 Margin="0,40,0,75"
-                Text="Paribus Donum"
+                Text="Donum"
                 HorizontalOptions="CenterAndExpand"
                 FontSize="75"
                 TextColor="White"

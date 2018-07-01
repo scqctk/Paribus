@@ -243,6 +243,13 @@ namespace ArchApp.Views.Auxillium
         private async void submitForm_Clicked(object sender, EventArgs e)
         {
             await CrossMedia.Current.Initialize();
+
+            if (!CrossMedia.Current.IsTakePhotoSupported)
+            {
+                await DisplayAlert("Failure", "Cannot Take Any Photos for You!", "Exit");
+                return;
+            }
+
             // creates new instance of photo taking device
             MediaFile picture;
             // if I can take a photo here

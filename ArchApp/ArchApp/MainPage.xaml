@@ -6,6 +6,7 @@
              NavigationPage.HasNavigationBar="false"
              BackgroundColor="DodgerBlue">
 
+        <!-- this is the main page -->
     <ContentPage.Content>
         <StackLayout>
             <Image
